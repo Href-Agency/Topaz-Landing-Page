@@ -180,3 +180,7 @@ require_once ASTRA_THEME_DIR . 'inc/core/markup/class-astra-markup.php';
 require_once ASTRA_THEME_DIR . 'inc/core/deprecated/deprecated-filters.php';
 require_once ASTRA_THEME_DIR . 'inc/core/deprecated/deprecated-hooks.php';
 require_once ASTRA_THEME_DIR . 'inc/core/deprecated/deprecated-functions.php';
+
+
+wp_enqueue_style('custom-styles', get_template_directory_uri() . '/assets/css/custom.css', array(), false);
+wp_enqueue_script('custom-datepicker-scripts', get_template_directory_uri() . '/assets/js/unminified/custom-js-date-selection.js', array('jquery'), true);
